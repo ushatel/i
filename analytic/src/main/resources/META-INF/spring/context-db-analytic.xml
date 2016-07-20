@@ -47,7 +47,7 @@
 
         <!-- ===========================   TRANSACTIONS   ========================= -->
 
-        <tx:advice id="txAdvice" transaction-manager="transactionManagerAnalytic">
+        <tx:advice id="txAdviceAnalytic" transaction-manager="transactionManagerAnalytic">
             <tx:attributes>
                 <tx:method name="get*" read-only="true"/>
                 <tx:method name="find*" read-only="true"/>
